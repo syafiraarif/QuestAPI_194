@@ -1,0 +1,5 @@
+![Halaman Home Sebelum Ada Data](HalamanHome.png)
+![Halaman Form Input Data](HalamanInputData.png)
+![Halaman Home Setelah Data Diinput](DataSetelahDiinput.png)
+![Tampilan List Data ](TampilanListData.png)
+![Database yang Terhubung](Database.png)
