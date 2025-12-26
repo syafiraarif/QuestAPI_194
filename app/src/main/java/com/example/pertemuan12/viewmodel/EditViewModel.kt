@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.pertemuan12.modedata.DetailSiswa
 import com.example.pertemuan12.modedata.UIStateSiswa
+import com.example.pertemuan12.modedata.toDataSiswa
 import com.example.pertemuan12.modedata.toUiStateSiswa
 import com.example.pertemuan12.repositori.RepositoryDataSiswa
 import kotlinx.coroutines.launch
@@ -33,6 +34,17 @@ class EditViewModel (savedStateHandle: SavedStateHandle,private val repositoryDa
     private fun validasiInput(uiState: DetailSiswa = uiStateSiswa.detailSiswa): Boolean {
         return with(uiState) {
             nama.isNotBlank() && alamat.isNotBlank() && telpon.isNotBlank()
+        }
+    }
+    suspend fun editSatuSiswa(){
+        if (validasiInput(uiStateSiswa.detailSiswa)) {
+            val call: Response<Void> = repositoryDataSiswa.editSatuSiswa(idSiswa, uiStateSiswa.detailSiswa.toDataSiswa())
+
+            if(call.isSuccessful){
+                println("Update Sukses : ${call.message()}")
+            }else{
+                println("Update Error : ${call.errorBody()}")
+            }
         }
     }
 }
