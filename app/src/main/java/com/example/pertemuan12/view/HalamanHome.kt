@@ -66,10 +66,11 @@ fun HomeScreen(
                 modifier = Modifier.padding(dimensionResource(R.dimen.padding_large))
             ) {
                 Icon(
-                    imageVector = Icons.Default.Add,contentDescription = null
+                    imageVector = Icons.Default.Add,
+                    contentDescription = stringResource(R.string.entry_siswa)
                 )
             }
-        }
+        },
     ) { innerPadding ->
         HomeBody(
             statusUiSiswa = viewModel.listSiswa,
@@ -95,8 +96,7 @@ fun HomeBody(
     ) {
         when(statusUiSiswa){
             is StatusUiSiswa.Loading -> LoadingScreen()
-            is StatusUiSiswa.Success -> DaftarSiswa(itemSiswa = statusUiSiswa
-                .siswa,
+            is StatusUiSiswa.Success -> DaftarSiswa(itemSiswa = statusUiSiswa.siswa,
                 onSiswaClick = {onSiswaClick(it.id)})
             is StatusUiSiswa.Error -> ErrorScreen(
                 retryAction,
