@@ -6,47 +6,32 @@ Mata Kuliah **Pengembangan Aplikasi Mobile**
 ---
 
 ## 👤 Identitas Mahasiswa
-- **Nama** : Putri Aulia Syafira Arif
-- **NIM** : 20230140194
+- **Nama**  : Putri Aulia Syafira Arif
+- **NIM**   : 20230140194
 - **Kelas** : D
 
 ---
 
-## 🧪 Pertemuan 12
-**Materi:** Implementasi Local API & Input Data
+## 🧪 Screenshot (Pertemuan 12)
 
-### 📱 Screenshot Aplikasi
-
-| Halaman | Tampilan |
-|-------|---------|
-| Halaman Home (Sebelum Ada Data) | ![Home](./HalamanHome.png) |
-| Halaman Form Input Data | ![Input](./HalamanInputData.png) |
-| Halaman Home Setelah Data Diinput | ![Submit](./DataSetelahDiinput.png) |
-| Tampilan List Data (Card) | ![List](./TampilanListData.png) |
+| Halaman Home | Halaman Entry | Home Setelah Submit | Home (List Card) |
+|--------------|---------------|---------------------|------------------|
+| ![Home](./HalamanHome.png) | ![Entry](./HalamanInputData.png) | ![Submit](./DataSetelahDiinput.png) | ![List](./TampilanListData.png) |
 
 ### 🗄️ Database
-| Database |
-|---------|
-| ![Database](./Database.png) |
+![Database](./Database.png)
 
 ---
 
-## 🧪 Pertemuan 13
-**Materi:** Detail, Edit, dan Delete Data (CRUD Lanjutan)
+## 🧪 Screenshot (Pertemuan 13)
 
-### 📱 Screenshot Aplikasi
+| Halaman Home | Halaman Detail | Halaman Edit | Detail (After Edit) |
+|--------------|---------------|--------------|---------------------|
+| ![Home1](./HalamanHome1.png) | ![Detail](./HalamanDetail.png) | ![Edit](./HalamanEdit.png) | ![DetailEdit](./HalamanDetail1.png) |
 
-| Halaman                     | Tampilan                              |
-|-----------------------------|---------------------------------------|
-| Halaman Home                | ![HalamanHome1](./HalamanHome1.png)   |
-| Halaman Detail Data         | ![HalamanDetail](./HalamanDetail.png) |
-| Halaman Edit Data           | ![HalamanEdit](./HalamanEdit.png)     |
-| Halaman Detail Setelah Edit | ![HalamanEdit1](./HalamanDetail1.png) |
-| Hapus Data                  | ![HapusData](./HapusData.png)         |
-| After Hapus Data            | ![AfterHapus](./AfterHapus.png)       |
+| Hapus Data | After Hapus Data |
+|------------|------------------|
+| ![Hapus](./HapusData.png) | ![After](./AfterHapus.png) |
 
 ### 🗄️ Database
-| Database |
-|---------|
-| ![Database1](./Database1.png) |
-
+![Database1](./Database1.png)
