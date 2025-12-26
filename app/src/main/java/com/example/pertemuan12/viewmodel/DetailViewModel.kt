@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.pertemuan12.modedata.DataSiswa
 import com.example.pertemuan12.repositori.RepositoryDataSiswa
+import com.example.pertemuan12.view.route.DestinasiDetail
 import kotlinx.coroutines.launch
 import okio.IOException
 import retrofit2.HttpException

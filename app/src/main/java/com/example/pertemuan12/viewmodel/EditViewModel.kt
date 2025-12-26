@@ -11,6 +11,7 @@ import com.example.pertemuan12.modedata.UIStateSiswa
 import com.example.pertemuan12.modedata.toDataSiswa
 import com.example.pertemuan12.modedata.toUiStateSiswa
 import com.example.pertemuan12.repositori.RepositoryDataSiswa
+import com.example.pertemuan12.view.route.DestinasiEdit
 import kotlinx.coroutines.launch
 import retrofit2.Response
 
@@ -20,7 +21,7 @@ class EditViewModel (savedStateHandle: SavedStateHandle,private val repositoryDa
         var uiStateSiswa by mutableStateOf(UIStateSiswa())
         private set
 
-    private val idSiswa: Int = checkNotNull(savedStateHandle[DestinasiDetail.itemIdArg])
+    private val idSiswa: Int = checkNotNull(savedStateHandle[DestinasiEdit.itemIdArg])
     init {
         viewModelScope.launch {
             uiStateSiswa = repositoryDataSiswa.getSatuSiswa(idSiswa)
