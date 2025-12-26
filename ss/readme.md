@@ -1,16 +1,3 @@
-# Quest Local API
-
-Project ini dibuat untuk memenuhi **Tugas Teori Pertemuan 12 dan 13**  
-Mata Kuliah **Pengembangan Aplikasi Mobile**
-
----
-
-## 👤 Identitas Mahasiswa
-- **Nama**  : Putri Aulia Syafira Arif
-- **NIM**   : 20230140194
-- **Kelas** : D
-
----
 
 ## 🧪 Screenshot (Pertemuan 12)
 
