@@ -1,10 +1,13 @@
 package com.example.pertemuan12.viewmodel.provider
 
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.pertemuan12.repositori.AplikasiDataSiswa
+import com.example.pertemuan12.viewmodel.DetailViewModel
+import com.example.pertemuan12.viewmodel.EditViewModel
 import com.example.pertemuan12.viewmodel.EntryViewModel
 import com.example.pertemuan12.viewmodel.HomeViewModel
 
@@ -18,6 +21,18 @@ object PenyediaViewModel {
         }
         initializer {
             EntryViewModel(aplikasiDataSiswa().containerApp.repositoryDataSiswa)
+        }
+        initializer {
+            DetailViewModel(
+                this.createSavedStateHandle(),
+                aplikasiDataSiswa().containerApp.repositoryDataSiswa
+            )
+        }
+        initializer {
+            EditViewModel(
+                this.createSavedStateHandle(),
+                aplikasiDataSiswa().containerApp.repositoryDataSiswa
+            )
         }
     }
 }
